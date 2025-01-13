@@ -17,7 +17,7 @@ void setup() {
 
 void loop() {
   int x = 0;
-  while (x < 1000)
+  while (x < 500)
   {
     //Blink the LED with the specified pattern
     digitalWrite(LED_BUILTIN, HIGH);
@@ -30,7 +30,7 @@ void loop() {
 
     x++;
   }
-  return;
+  ESP.deepSleep(0); // This will put the ESP32 into deep sleep mode
 }
 
 // Function definitions
